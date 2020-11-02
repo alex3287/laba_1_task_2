@@ -11,8 +11,15 @@ int main()
     ClassA a1;
     cout<<a1.getMultiplicity()<<endl; // проверим количество связей
 
+
     //создание объекта Class B
     ClassB b1;
+    cout<<b1.hasA()<<endl; // проверим наличие связей с объектом класса A
 
+    b1.addA(a1);    //установим связь
+    cout<<b1.hasA()<<endl; // проверим наличие связей с объектом класса A
+
+    a1.addB(b1);
+    cout<<a1.hasB()<<endl; // проверим наличие связей с объектом класса B
     return 0;
 }
