@@ -1,6 +1,6 @@
 #include <iostream>
-#include <classa.h>
-#include <classb.h>
+#include "classa.h"
+#include "classb.h"
 
 using namespace std;
 
@@ -38,6 +38,9 @@ int main()
     //разорвать все связи
     a1.removeB();
     cout<<"\nколичество связей объекта a1: "<<a1.getMultiplicity()<<endl; // проверим наличие связей с объектом класса B
+
+    //проверка времени жизни объектов
+    ClassA a4, a5, a6;
 
     return 0;
 }
