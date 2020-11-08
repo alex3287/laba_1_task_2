@@ -1,5 +1,5 @@
+#include <iostream>
 #include "classa.h"
-
 #include"classb.h"
 
 ClassA::ClassA() : m_update(false)
@@ -11,6 +11,7 @@ ClassA :: ~ClassA()
 {
     for (int j(0); j < 4; j++)
         m_pB[j] = 0;
+    std::cout<<"Destructor classA"<<std::endl;
 }
 //вернуть количество связей
 const int ClassA:: getMultiplicity() const

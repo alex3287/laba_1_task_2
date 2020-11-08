@@ -1,11 +1,12 @@
+#include <iostream>
 #include "classb.h"
 #include "classa.h"
 
 ClassB :: ClassB(): m_update (false), m_рА(0) {}
 ClassB :: ~ClassB()
 {
-
     m_рА = 0;
+    std::cout<<"Destructor classB"<<std::endl;
 }
 //вернуть указатель на связанный объект
 const ClassA* ClassB :: getA() const
